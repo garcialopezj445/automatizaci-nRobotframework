@@ -1,9 +1,9 @@
-*** Settings ***
+﻿*** Settings ***
 Library     SeleniumLibrary
 
 
 *** Variables *** 
-${URL}          http://localhost:4000/login
+${URL}          http://localhost:8080/naturaltour/iniciosesion.jsp
 ${BROWSER}      chrome
    
 
@@ -17,15 +17,15 @@ Cerrar navegador
     Close Browser
 
 logueandose en sitio web
-    go to http://localhost:4000/login
+    go to http://localhost:8080/naturaltour/iniciosesion.jsp
 
 Ingresando nombre de usuario
     [Arguments]     ${username}
-    input text  id:username     ${username}
+    input text  id:email     ${username}
 
 Ingresando contraseña
     [Arguments]     ${password}
-    input text  id:password     ${password}
+    input text  id:contra     ${password}
 
 Seleccionar boton de logueo 
-    click element   xpath://*[@id="button-login"]
+    click element   xpath=/html/body/div[1]/div/div/div/form/input[3]
