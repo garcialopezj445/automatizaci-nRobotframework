@@ -1,6 +1,6 @@
 ﻿*** Settings ***
 Documentation       Existe en un documento de texto los pasos manuales
-...                 Esta es mi primera automatizacion manuela 
+...                 Esta es mi primera automatizacion
 
       
 
